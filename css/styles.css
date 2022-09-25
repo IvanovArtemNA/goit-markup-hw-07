@@ -31,6 +31,15 @@ body {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: var(--background-text-color);
+}
+
+.section:nth-child(2) {
+  padding-bottom: 0px;
+}
+
+.section:nth-child(4) {
+  background-color: var(--background-section-color);
 }
 
 h1,
@@ -56,11 +65,11 @@ ul {
 
 /* ЛОГОТИП */
 
-.halflogo {
+.site__halflogo {
   color: var(--interactive-color);
 }
 
-.logo {
+.site__logo {
   color: var(--logo-color-header);
   font-family: Raleway, sans-serif;
   font-size: 26px;
@@ -81,14 +90,9 @@ ul {
 
 header {
   border-bottom: 1px solid #ececec;
-  /* position: fixed;
-    height: 79.93px;
-    opacity: 1;
-    z-index: 9;
-    background-color: #FFFFFF;*/
 }
 
-.divheader {
+.site__header {
   display: flex;
   color: var(--secondary-text-color);
   letter-spacing: 0.02em;
@@ -97,12 +101,12 @@ header {
   align-items: center;
 }
 
-.navfooter {
+.site__nav {
   display: flex;
   align-items: center;
 }
 
-.ulnavigationone {
+.nav__menu {
   display: flex;
   margin-left: 93px;
   gap: 50px;
@@ -112,37 +116,36 @@ header {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.ulnavigationone a {
+.nav__menu a {
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
-  color: var(--primary-text-color);
 }
 
-.ulnavigationtwo {
+.contacts {
   display: flex;
   list-style: none;
   margin-left: auto;
 }
 
-.linavigationtwo:last-child {
+.contacts__list:last-child {
   margin-left: 50px;
 }
 
-.ulnavigationone .link:hover,
-.ulnavigationone .link:focus {
+.nav__menu .link:hover,
+.nav__menu .link:focus {
   color: var(--interactive-color);
 }
 
 /* ГЛАВНАЯ СЕКЦИЯ */
 
-.main {
+.hero__page {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
 }
 
-.overlay {
+.hero__overlay {
   height: 600px;
   max-width: 1600px;
   margin-left: auto;
@@ -154,7 +157,7 @@ header {
   background-color: #c4c4c4;
 }
 
-.main-title {
+.hero__title {
   color: var(--background-text-color);
   letter-spacing: 0.06em;
   font-size: 44px;
@@ -167,12 +170,12 @@ header {
 
 /* Секция 2 */
 
-.ulsectiontwo {
+.advantage {
   display: flex;
   padding: initial;
 }
 
-.lisectiontwo {
+.advantage__list {
   width: 270px;
   margin-right: 30px;
   list-style: none;
@@ -180,19 +183,15 @@ header {
   text-align: left;
 }
 
-.lisectiontwo:last-child {
+.advantage__list:last-child {
   margin-right: 0;
 }
 
-.lisectiontwo:first-child {
+.advantage__list:first-child {
   margin-left: 0;
 }
 
-.two {
-  padding-bottom: 0;
-}
-
-.titletwosection {
+.advantage__subtitle {
   color: var(--primary-text-color);
   font-weight: 700;
   line-height: 1.14;
@@ -200,25 +199,25 @@ header {
   font-size: 14px;
 }
 
-.section .pluses {
+.section .advantage__text {
   color: var(--secondary-text-color);
   line-height: 1.71;
 }
 
 /* Секция 3 */
 
-.ulsectionthree {
+.specialization {
   display: flex;
   padding: initial;
   list-style: none;
 }
 
-.lisectionthree {
+.specialization__list {
   margin-right: 30px;
   background-color: var(--border-color);
 }
 
-.lisectionthree:last-child {
+.specialization__list:last-child {
   margin-right: 0;
 }
 
@@ -226,7 +225,7 @@ header {
   padding-bottom: 0;
 }
 
-.title-section {
+.section__title {
   text-align: center;
   font-size: 36px;
   line-height: 1.16;
@@ -237,15 +236,11 @@ header {
 
 /* Секция 4 */
 
-.team {
-  background-color: #f5f4fa;
-}
-
-.list {
+.teammates {
   display: flex;
 }
 
-.item {
+.teammates__list {
   margin-right: 30px;
   background-color: var(--background-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -254,36 +249,36 @@ header {
   text-align: center;
 }
 
-.item:last-child {
+.teammates__list:last-child {
   margin-right: 0;
 }
 
-.name {
+.teammates__name {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 }
 
-.profession {
+.teammates__profession {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.19;
   margin-top: 10px;
 }
 
-.team-contacts {
+.teammates__body {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.list-contacts {
+.social-networks__list {
   width: 44px;
 }
 
 /* СЕКЦИЯ 5 (Кнопки) */
 
-.ulbuttonfive {
+.portfolio-filter {
   display: flex;
   list-style: none;
   padding-left: 0;
@@ -291,11 +286,11 @@ header {
   gap: 8px;
 }
 
-.libuttonfive:last-child {
+.portfolio-filter__list:last-child {
   margin-right: 298px;
 }
 
-.libuttonfive:first-child {
+.portfolio-filter__list:first-child {
   margin-left: 297px;
 }
 
@@ -305,7 +300,7 @@ header {
   background-color: var(--background-text-color);
 }
 
-.ulfive {
+.portfolio-project {
   /* !!! ИДЕАЛ НАЧАЛО !!! */
   display: flex; /* В случае изменения ширины макета меняем ширину в divfive и container, узнаем кол-во и размер отступов (формула) + плюс кол-во елементов в строке */
   flex-wrap: wrap;
@@ -313,37 +308,36 @@ header {
   padding-left: 0;
 }
 
-.lifive {
+.portfolio-project__list {
   width: calc((100% - 2 * 30px) / 3);
   background-color: var(--background-text-color);
   margin-right: 30px;
   margin-bottom: 30px;
 }
 
-.lifive:nth-child(3n) {
+.portfolio-project__list:nth-child(3n) {
   margin-right: 0;
 }
 
-.lifive:nth-last-child(-n + 3) {
-  /* !!! ИДЕАЛ КОНЕЦ !!! */
+.portfolio-project__list:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
 
-.section .project {
+.project__title {
   color: var(--primary-text-color);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
-.section .kind {
+.project__category {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.88;
   margin-top: 4px;
 }
 
-.border {
+.project__border {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
@@ -353,7 +347,7 @@ header {
   border-bottom: 1px solid var(--border-color);
 }
 
-.link-portfolio {
+.project {
   display: block;
   text-decoration: none;
 
@@ -362,7 +356,7 @@ header {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-portfolio:hover {
+.project:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -412,7 +406,7 @@ header {
 
 /* КОНТАКТЫ */
 
-.contacts-header {
+.contacts__link {
   display: flex;
   color: var(--secondary-text-color);
   letter-spacing: 0.02em;
@@ -425,8 +419,8 @@ header {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-header:hover,
-.contacts-header:focus {
+.contacts__link:hover,
+.contacts__link:focus {
   fill: var(--interactive-color);
   color: var(--interactive-color);
 }
@@ -449,7 +443,7 @@ header {
 
 /* КНОПКИ */
 
-.button-primary {
+.hero__button {
   color: var(--background-text-color);
   background-color: var(--interactive-color);
   letter-spacing: 0.06em;
@@ -468,13 +462,17 @@ header {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-primary:hover,
-.button-secondary:focus {
+.portfolio-filter__button:hover,
+.portfolio-filter__button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: var(--interactive-color);
+  background-color: var(--interactive-color);
+  color: var(--background-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.button-secondary {
+.portfolio-filter__button {
   font-family: inherit;
   color: var(--primary-text-color);
   background-color: var(--background-section-color);
@@ -489,14 +487,6 @@ header {
   transition-property: box-shadow, color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button-secondary:hover,
-.button-secondary:focus {
-  background-color: var(--interactive-color);
-  color: var(--background-text-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* СПРЯТАННЫЙ ЕЛЕМЕНТ */
@@ -517,7 +507,7 @@ img {
 
 /* ИКОНКИ НАШИ ПЛЮСЫ */
 
-.plusesicons {
+.advantage__body {
   background-color: var(--background-section-color);
   border-radius: 4px;
   margin-bottom: 30px;
@@ -559,14 +549,14 @@ img {
 
 /* ИКОНКИ СОЦ СЕТЕЙ */
 
-.social {
+.social-networks {
   display: flex;
   justify-content: center;
   gap: 10px;
   padding-top: 16px;
 }
 
-.social-link {
+.social-networks__link {
   fill: var(--color-icons);
   height: 44px;
   width: 100%;
@@ -582,8 +572,8 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-link:hover,
-.social-link:focus {
+.social-networks__link:hover,
+.social-networks__link:focus {
   fill: var(--background-text-color);
   background-color: var(--interactive-color);
   border-radius: 50%;
@@ -591,7 +581,7 @@ img {
 
 /* Иконки контактов */
 
-.icon-contacts {
+.contacts__icon {
   margin-right: 10px;
   padding-top: 1px;
 }
@@ -633,12 +623,12 @@ img {
 
 /* ОВЕРЛЕЙ ПОРТФОЛИО */
 
-.portfolio-overlay {
+.project__overlay {
   position: relative;
   overflow: hidden;
 }
 
-.overlay-hide {
+.project__overlay-body {
   position: absolute;
   display: flex;
   width: 100%;
@@ -648,14 +638,14 @@ img {
   background: rgba(33, 150, 243, 0.9);
 }
 
-.lifive:hover .overlay-hide,
-.lifive:focus .overlay-hide {
+.portfolio-project__list:hover .project__overlay-body,
+.portfolio-project__list:focus .project__overlay-body {
   top: 100%;
   transform: translate(0%, -100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.text-overlay {
+.project__overlay-text {
   color: #ffffff;
   font-size: 18px;
   line-height: 1.56;
@@ -709,8 +699,8 @@ img {
   background-color: #ffffff;
   border: none;
   position: absolute;
-  top: -6%;
-  right: -8%;
+  top: -7%;
+  right: -9%;
 }
 
 .close-button {
@@ -719,6 +709,7 @@ img {
   border-radius: 50%;
 
   cursor: pointer;
+  padding: 5px;
 }
 
 .close-modal:hover,
@@ -734,11 +725,11 @@ img {
 
 /* ЧИМ МИ ЗАЙМАЄМОСЯ ОВЕРЛЕЙ */
 
-.pluses-overlay {
+.specialization__overlay {
   position: relative;
 }
 
-.plusestext-overlay {
+.specialization__text {
   position: absolute;
 
   font-style: normal;
@@ -758,7 +749,7 @@ img {
   justify-content: center;
 }
 
-.pluses-overlay::before {
+.specialization__overlay::before {
   content: '';
   position: absolute;
 
@@ -772,11 +763,22 @@ img {
 
 /* НИЖНЕЕ ПОДЧЕРКИВАНИЕ */
 
-.link.current {
+.nav__link {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  color: var(--interactive-color);
+}
+
+.nav__link--current {
   position: relative;
   color: var(--interactive-color);
 }
-.link.current::after {
+
+.nav__link--current::after {
   content: '';
   position: absolute;
   background-color: var(--interactive-color);
@@ -1012,5 +1014,32 @@ img {
 
 .checkbox + .icon-checkbox {
   opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox:checked + .icon-checkbox {
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 0.2px solid var(--background-text-color);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox + .icon-checkbox {
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tutitu {
+  position: absolute;
+  margin-right: 390px;
+}
+
+.checkbox:checked ~ .tutitu {
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox ~ .tutitu {
+  opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
