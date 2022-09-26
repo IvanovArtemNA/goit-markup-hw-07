@@ -206,7 +206,7 @@ header {
   margin-right: auto;
 }
 
-.hero__overlay {
+.hero {
   height: 600px;
   max-width: 1600px;
   margin-left: auto;
