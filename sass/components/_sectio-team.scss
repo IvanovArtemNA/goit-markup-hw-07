@@ -1,10 +1,10 @@
 /* СЕКЦИЯ КОМАНДА */
 
-.teammates-cards {
+.teammates {
     display: flex;
 }
 
-.teammates-cards__item {
+.teammates__item {
     margin-right: 30px;
     background-color: $background-text-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -31,7 +31,7 @@
     margin-top: 10px;
 }
 
-.teammates__body {
+.teammates__container {
     padding-top: 30px;
     padding-bottom: 30px;
 }

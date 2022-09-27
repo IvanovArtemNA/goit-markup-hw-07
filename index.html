@@ -17,11 +17,11 @@
   </head>
 
   <body>
-    <header class="container">
-      <div class="site__header">
-        <nav class="site__nav">
-          <a lang="en" href="./index.html" class="site__logo">
-            <span class="site__halflogo">Web</span>Studio</a
+    <header class="header">
+      <div class="container nav">
+        <nav class="nav__body">
+          <a lang="en" href="./index.html" class="logo">
+            <span class="logo__part">Web</span>Studio</a
           >
           <ul class="nav__menu">
             <li>
@@ -52,19 +52,17 @@
       </div>
     </header>
     <main>
-      <div class="hero">
-        <section class="hero__page">
-          <h1 class="hero__title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-          <button data-modal-open type="button" class="hero__button">Замовити послугу</button>
-        </section>
-      </div>
+      <section class="hero">
+        <h1 class="hero__title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
+        <button data-modal-open type="button" class="hero__button">Замовити послугу</button>
+      </section>
 
       <section class="section">
         <div class="container">
           <h2 class="hidden">Наші переваги</h2>
           <ul class="advantage-cards">
             <li class="advantage-cards__item">
-              <div class="advantage">
+              <div class="advantage-cards__container">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna-1"></use>
                 </svg>
@@ -75,7 +73,7 @@
               </p>
             </li>
             <li class="advantage-cards__item">
-              <div class="advantage">
+              <div class="advantage-cards__container">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-clock-1"></use>
                 </svg>
@@ -86,7 +84,7 @@
               </p>
             </li>
             <li class="advantage-cards__item">
-              <div class="advantage">
+              <div class="advantage-cards__container">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
@@ -97,7 +95,7 @@
               </p>
             </li>
             <li class="advantage-cards__item">
-              <div class="advantage">
+              <div class="advantage-cards__container">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut-1"></use>
                 </svg>
@@ -116,21 +114,21 @@
           <h2 class="section__title">Чим ми займаємося</h2>
           <ul class="specialization-cards">
             <li class="specialization-cards__item">
-              <div class="specialization">
-                <img src="./images/1.jpg" alt="Створення вашого сайту" width="370" height="294" />
-                <p class="specialization__text">ДЕСКТОПНІ ДОДАТКИ</p>
+              <img src="./images/1.jpg" alt="Створення вашого сайту" width="370" height="294" />
+              <div class="specialization-cards__container">
+                <p class="specialization-cards__text">ДЕСКТОПНІ ДОДАТКИ</p>
               </div>
             </li>
             <li class="specialization-cards__item">
-              <div class="specialization">
-                <img src="./images/2.jpg" alt="Розробка макету" width="370" height="294" />
-                <p class="specialization__text">МОБІЛЬНІ ДОДАТКИ</p>
+              <img src="./images/2.jpg" alt="Розробка макету" width="370" height="294" />
+              <div class="specialization-cards__container">
+                <p class="specialization-cards__text">МОБІЛЬНІ ДОДАТКИ</p>
               </div>
             </li>
             <li class="specialization-cards__item">
-              <div class="specialization">
-                <img src="./images/3.jpg" alt="Робота над дизайном" width="370" height="294" />
-                <p class="specialization__text">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
+              <img src="./images/3.jpg" alt="Робота над дизайном" width="370" height="294" />
+              <div class="specialization-cards__container">
+                <p class="specialization-cards__text">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
               </div>
             </li>
           </ul>
@@ -140,10 +138,10 @@
       <section class="section">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
-          <ul class="teammates-cards">
-            <li class="teammates-cards__item">
+          <ul class="teammates">
+            <li class="teammates__item">
               <img src="./images/4.jpg" alt="Наш продуктовий дизайнер" width="270" height="260" />
-              <div class="teammates__body">
+              <div class="teammates__container">
                 <h3 class="teammates__name">Ігор Дем'яненко</h3>
                 <p lang="en" class="teammates__profession">Product Designer</p>
                 <ul class="social-networks">
@@ -178,9 +176,9 @@
                 </ul>
               </div>
             </li>
-            <li class="teammates-cards__item">
+            <li class="teammates__item">
               <img src="./images/5.jpg" alt="Наш фронтенд розробник" width="270" height="260" />
-              <div class="teammates__body">
+              <div class="teammates__container">
                 <h3 class="teammates__name">Ольга Рєпіна</h3>
                 <p lang="en" class="teammates__profession">Frontend Developer</p>
                 <ul class="social-networks">
@@ -215,9 +213,9 @@
                 </ul>
               </div>
             </li>
-            <li class="teammates-cards__item">
+            <li class="teammates__item">
               <img src="./images/6.jpg" alt="Наш маркетолог" width="270" height="260" />
-              <div class="teammates__body">
+              <div class="teammates__container">
                 <h3 class="teammates__name">Микола Тарасов</h3>
                 <p lang="en" class="teammates__profession">Marketing</p>
                 <ul class="social-networks">
@@ -252,9 +250,9 @@
                 </ul>
               </div>
             </li>
-            <li class="teammates-cards__item">
+            <li class="teammates__item">
               <img src="./images/7.jpg" alt="Наш ЮІ дизайнер" width="270" height="260" />
-              <div class="teammates__body">
+              <div class="teammates__container">
                 <h3 class="teammates__name">Михайло Єрмаков</h3>
                 <p lang="en" class="teammates__profession">UI Designer</p>
                 <ul class="social-networks">
@@ -345,10 +343,10 @@
     </main>
 
     <footer class="footer">
-      <div class="container container__footer">
+      <div class="container footer__container">
         <div>
-          <a lang="en" href="./index.html" class="site__logo site__logo--white">
-            <span class="site__halflogo">Web</span>Studio</a
+          <a lang="en" href="./index.html" class="logo logo--white">
+            <span class="logo__part">Web</span>Studio</a
           >
           <address class="address">
             <ul class="address__list">
@@ -373,7 +371,7 @@
           </address>
         </div>
         <div>
-          <b class="makeit">ПРИЄДНУЙТЕСЬ</b>
+          <strong class="makeit">ПРИЄДНУЙТЕСЬ</strong>
           <ul class="social-networks">
             <li class="social-networks__item">
               <a href="" class="social-networks__link social-networks__link--white">
@@ -407,7 +405,7 @@
         </div>
         <div class="form-subscribe">
           <form class="form-subscribe__body">
-            <b class="makeit">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</b>
+            <strong class="makeit">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</strong>
             <div class="form-subscribe__content">
               <label for="mail"></label>
               <input
@@ -436,7 +434,7 @@
               <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
             </svg>
           </button>
-          <b class="modal__title">Залиште свої дані, ми вам передзвонимо</b>
+          <strong class="modal__title">Залиште свої дані, ми вам передзвонимо</strong>
           <div class="modal__form-field">
             <label class="modal__form-text" for="name">Ім'я</label>
             <input class="modal__form-input" type="text" name="name" id="name" />

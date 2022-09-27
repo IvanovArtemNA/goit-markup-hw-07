@@ -7,9 +7,10 @@
     background-color: $footer-backgroud-color;
 }
 
-.container__footer {
+.footer__container {
     display: flex;
     align-items: baseline;
+    gap: 70px;
 }
 
 .address {
@@ -21,7 +22,6 @@
     display: block;
     flex-wrap: wrap;
     padding: initial;
-    margin-right: 70px;
 }
 
 .address__item {

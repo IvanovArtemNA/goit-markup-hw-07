@@ -220,11 +220,6 @@
     }
 }
 
-/*.modal__checkbox-input+.modal__icon-agreement {
-    opacity: 0;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}*/
-
 .modal__icon-border {
     position: absolute;
     margin-right: 390px;
@@ -237,9 +232,3 @@
         transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
-
-
-/*.modal__checkbox-input~.modal__icon-border {
-    opacity: 1;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}*/
